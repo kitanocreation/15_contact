@@ -24,22 +24,8 @@ p {
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     font-weight: 400;
     color: #414143;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     line-height: 150%;
-}
-
-.guide-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: #414143;
-    color: #FFFFFF;
-    font-family: "yu-mincho-pr6n","游明朝", serif;
-    font-weight: 600;
-    text-decoration: none; 
-    box-sizing: border-box;
-    cursor: pointer;
 }
 
 h1,.contact-main-title {
@@ -47,13 +33,24 @@ h1,.contact-main-title {
     font-weight: 600;
     display: flex;
     margin: 0;
+
 }
 
-.contact-title {
+.contact-title,.text-box title {
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     font-weight: 700;
     display: flex;
     margin: 0;
+}
+
+.number-font-B {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+
+.number-font {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
 }
 
 .breadcrumb-item::after{
@@ -103,6 +100,11 @@ h1,.contact-main-title {
     width: 24px;
 }
 
+.center-text {
+    align-self: stretch;
+    text-align: center;
+}
+
 
 /*==================== SPサイズ ====================*/
 @media screen and (max-width: 767px) {
@@ -125,6 +127,9 @@ h1,.contact-main-title {
     }
     p {        
         font-size: 14px;
+    }
+    .text-box title {
+        font-size: 16px;
     }
     .contact-main {
         display: flex;
@@ -156,6 +161,7 @@ h1,.contact-main-title {
         align-items: center;
         gap: 16px;
         align-self: stretch;
+        background: #F1F1F4
     }
     .text-box {
         display: flex;
@@ -215,6 +221,9 @@ h1,.contact-main-title {
     p {        
         font-size: 16px;
     }
+    .text-box title {
+        font-size: 18px;
+    }
     .contact-main {
         display: flex;
         padding: 40px 80px 64px 80px;
@@ -243,6 +252,24 @@ h1,.contact-main-title {
         align-items: center;
         gap: 16px;
         flex: 1 0 0;
+        background: #F1F1F4
+    }
+    .gray-box-guide {
+        display: flex;
+        padding: 24px 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        align-self: stretch;
+    }
+    .gray-box3 {
+        display: flex;
+        padding: 24px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 0 0;
+        align-self: stretch;    
     }
     .text-box {
         display: flex;
@@ -265,6 +292,9 @@ h1,.contact-main-title {
         height: 48px;
         border-radius: 24px;
         font-size: 16px;
+    }
+    .guide-button {
+        width: 300px;
     }
     .contact-main-title {
         font-size: 24px;
